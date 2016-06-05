@@ -15,7 +15,9 @@
 
 	- [题目名称: 1 # Binary Search on Sorted Array [有序数组的二分查找]](#题目名称-1binary-search-on-sorted-array有序数组的二分查找)
 	- [题目名称: 2 # k-th Occurrence of x in Unsorted Array [x在无序数组中的第k次出现]](#题目名称-2k-th-occurrence-of-x-in-unsorted-arrayx在无序数组中的第k次出现)
+  - [题目名称：3 # Shortest Path in an Undirected Graph[无向图的最短路]](#题目名称-3Shortest-Path-in-an-Undirected-Graph无向图的最短路)
 	- [题目名称: 4 # Solving a System of Linear Equations with Gaussian Elim [用高斯消去法解方程]](#题目名称-4solving-a-system-of-linear-equations-by-gaussian-elim用高斯消去法解方程)
+  - [题目名称：5 # standard deviation[计算标准差]](题目名称-5standard-deviation计算标准差)
 	- [题目名称: 6 # Naive Bayes [平凡贝叶斯]](#题目名称-6naivebayes平凡贝叶斯)
 	- [题目名称: 17 # Matrix Transpose [矩阵转置]](#题目名称-17matrix-transpose矩阵转置)
 	- [题目名称: 18 # Maxsum [连续子数组的最大和]](#题目名称-18max-sum连续子数组的最大和)
@@ -204,7 +206,29 @@
 	如果输入(A, x, k), 输出y不等于-1, 则输入(A, x, k+1), 输出等于-1或者输出大于y.
 > -  对于输入（A, x, k），输出为y，那么将A中所有数都乘以2，得到A’，则输入（A’, 2x, k）的输出仍为y。
 > -  分别输入 （A，x，1），（A，x，2）...（A，x，n），n为A长度；则结果y1 到 yn 先保持正数升序，直到一个数为-1，后面所有均为-1
+---
 
+#### **题目名称:** 3#Shortest Path in an Undirected Graph[无向图的最短路]
+**题目描述:**
+
+	求无向图的最短路
+
+**题目输入:**
+
+| 输入参数 | 类型 | 说明 |
+| -------- | ---- | ---- |
+| `G` | `无向图` | 所需要求最短路的无向图，保证连通 |
+| `a` | `int` | 起点 |
+| `b` | `int` | 终点 |
+
+**题目输出:**
+
+| 输出结果 | 类型 | 说明 |
+| -------- | ---- | ---- |
+| `P` | `int[]` | 从a到b的最短路的路径 |
+| `length` | int | 从a到b的最短路的路径长度 |
+
+**样例MR:**
 
 ---
 
@@ -229,7 +253,6 @@
 **样例MR:**
 
 > - [mrhuntor] 当A里的每一个数都乘以2, b里的每一个数都乘以2时, 输出不变
-
 > -  将矩阵A的列向量，第m列与第n列进行互换，输出结果中的第m分量与第n分量互换
 > -  矩阵A的第m行和n行互换位置，b里第m行和n行也互换，则结果不变
 > -  将A中的第k列乘以2，得到的解向量中的第k个分量为x第k个分量的1/2
@@ -238,6 +261,27 @@
 > -  输入(A,b)输出x,输入((A*)的逆,b)输出y,则|A|x=y
 > -  A中的第m行的各元素，分别对应减去第n行的各元素值*k，B中m行值减去n行的值*k。（k不为0）将新的A、B输入，所得结果不变。
 > -  假设输入（A, b），输出y1,输入(A,b/k)(k>0),输出y2,则y2=y1/k;
+
+---
+
+#### **题目名称:** 5#standard deviation[计算标准差]
+**题目描述:**
+
+	计算输入数组的标准差
+
+**题目输入:**
+
+| 输入参数 | 类型 | 说明 |
+| -------- | ---- | ---- |
+| `A` | double[] | double数组 |
+
+**题目输出:**
+
+| 输出结果 | 类型 | 说明 |
+| -------- | ---- | ---- |
+| `S` | `double` | A的标准差 |
+
+**样例MR:**
 
 ---
 
@@ -556,22 +600,8 @@
 **样例MR:**
 
 > - [mrhuntor] 输入打乱顺序后得到的结果相同
-```
-if
-x_0 = init();
-x_1_0 = permute(x_0_0);
-then
-y_0_0 == y_1_0;
-```
 
 > - [mrhuntor] 乘以二
-```
-if
-x_0 = init();
-x_1_0 = multiply(x_0_0,2);
-then
-multiply(y_0_0, 2) == y_1_0;
-```
 
 ---
 
