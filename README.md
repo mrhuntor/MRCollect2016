@@ -15,9 +15,9 @@
 
 	- [题目名称: 1 # Binary Search on Sorted Array [有序数组的二分查找]](#题目名称-1binary-search-on-sorted-array有序数组的二分查找)
 	- [题目名称: 2 # k-th Occurrence of x in Unsorted Array [x在无序数组中的第k次出现]](#题目名称-2k-th-occurrence-of-x-in-unsorted-arrayx在无序数组中的第k次出现)
-  - [题目名称：3 # Shortest Path in an Undirected Graph[无向图的最短路]](#题目名称-3Shortest-Path-in-an-Undirected-Graph无向图的最短路)
+	- [题目名称: 3 # Shortest Path in an Undirected Graph[无向图的最短路]](#题目名称-3Shortest-Path-in-an-Undirected-Graph无向图的最短路)
 	- [题目名称: 4 # Solving a System of Linear Equations with Gaussian Elim [用高斯消去法解方程]](#题目名称-4solving-a-system-of-linear-equations-by-gaussian-elim用高斯消去法解方程)
-  - [题目名称：5 # standard deviation[计算标准差]](题目名称-5standard-deviation计算标准差)
+	- [题目名称: 5 # standard deviation[计算标准差]](题目名称-5standard-deviation计算标准差)
 	- [题目名称: 6 # Naive Bayes [平凡贝叶斯]](#题目名称-6naivebayes平凡贝叶斯)
 	- [题目名称: 17 # Matrix Transpose [矩阵转置]](#题目名称-17matrix-transpose矩阵转置)
 	- [题目名称: 18 # Maxsum [连续子数组的最大和]](#题目名称-18max-sum连续子数组的最大和)
